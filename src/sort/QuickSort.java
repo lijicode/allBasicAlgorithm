@@ -4,7 +4,9 @@ package sort;
  * 快速排序
  * 基本思想：每一轮结束后，前面单元中所有元素都小于基准元素，
  * 后面单元中所有元素都大于等于基准元素，
- * 基准元素的当前位置就是排序后的最终位置
+ * 基准元素的当前位置就是排序后的最终位置。
+ *
+ * 当要排序的元素数量较大时，快速排序是目前为止在平均情况下速度最快的一种排序方法。
  */
 public class QuickSort {
     public static void sort(int[] array, int low, int high) {

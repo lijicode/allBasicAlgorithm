@@ -1,16 +1,23 @@
 package sort;
 
+import util.PrintUtil;
+
 public class SortTest {
     public static void main(String[] args) {
-        int[] array1 = {6, 5, 4, 3, 2, 1};
-        int[] array2 = {60, 55, 48, 37, 10, 90, 84, 36};
-        int[] array = {10, 50, 32,5,76,9,40,88};
-//        BubbleSort.sort(array);
-//        QuickSort.sort(array,0,array.length-1);
-        HeapSort.sort(array);
-        for (int i=0;i<array.length-1;i++) {
-            System.out.print(array[i]+", ");
-        }
-        System.out.println(array[array.length - 1]);
+        int[] bubbleSortArray = {6, 5, 4, 3, 2, 1};
+        BubbleSort.sort(bubbleSortArray);
+        PrintUtil.printByComma(bubbleSortArray, "BubbleSort");
+
+        int[] quickSortArray = {60, 55, 48, 37, 10, 90, 84, 36};
+        QuickSort.sort(quickSortArray, 0, quickSortArray.length - 1);
+        PrintUtil.printByComma(quickSortArray, "QuickSort");
+
+        int[] heapSortArray = {10, 50, 32, 5, 76, 9, 40, 88};
+        HeapSort.sort(heapSortArray);
+        PrintUtil.printByComma(heapSortArray, "HeapSort");
+
+        int[] mergeSortArray = {80, 28, 73, 71, 23, 94, 16, 5, 68, 64, 35};
+        MergeSort.sort(mergeSortArray);
+        PrintUtil.printByComma(mergeSortArray, "MergeSort");
     }
 }
