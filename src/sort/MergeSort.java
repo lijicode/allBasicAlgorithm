@@ -1,5 +1,10 @@
 package sort;
 
+/**
+ * 归并排序
+ * 基本思想：就是利用归并操作把一个待排序序列排列成一个有序序列的过程。
+ * 若利用二路归并操作则称为二路归并排序。
+ */
 public class MergeSort {
 
     //把数组A中两个相邻的有序序列array[low]~array[mid]和array[mid+1]~array[high]

@@ -1,8 +1,9 @@
 package util;
 
 public class PrintUtil {
-    public static void printByComma(int[] array,String sortName) {
-        System.out.print(sortName+": ");
+    //打印名字以及通过逗号隔开的数组
+    public static void printByComma(int[] array,String name) {
+        System.out.print(name+": ");
         for (int i=0;i<array.length-1;i++) {
             System.out.print(array[i]+", ");
         }
